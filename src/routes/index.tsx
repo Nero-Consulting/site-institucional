@@ -78,24 +78,22 @@ function Index() {
         </div>
       </header>
 
-      <main className="relative z-10 flex-1 flex items-center px-6 md:px-12 lg:px-20 py-20 md:py-32 lg:py-40">
+      <main className="relative z-10 flex-1 flex items-center px-6 md:px-12 lg:px-20 py-6 md:py-32 lg:py-40">
         <div className="max-w-3xl mx-auto w-full">
-          <div className="flex items-center gap-3 mb-10 md:mb-14">
-            <span className="h-px w-10 bg-primary" />
-            <span className="text-[11px] md:text-xs tracking-[0.28em] uppercase text-primary font-medium">
+          <div className="flex items-center gap-3 mb-5 md:mb-14">
+            <span className="h-px w-8 md:w-10 bg-primary" />
+            <span className="text-[9px] md:text-xs tracking-[0.24em] md:tracking-[0.28em] uppercase text-primary font-medium">
               STRATEGY • TRANSFORMATION • EXECUTION
             </span>
           </div>
 
-          <h1 className="font-serif text-[2.5rem] leading-[1.05] md:text-6xl lg:text-7xl xl:text-[5.5rem] tracking-tight text-foreground">
+          <h1 className="font-serif text-[1.75rem] leading-[1.08] md:text-6xl lg:text-7xl xl:text-[5.5rem] tracking-tight text-foreground">
             Evoluindo para
             <br />
-            entregar <span className="italic text-primary">ainda mais</span>
-            <br />
-            valor.
+            entregar <span className="italic text-primary">ainda mais valor.</span>
           </h1>
 
-          <div className="mt-16 md:mt-24 max-w-xl space-y-6 text-[15px] md:text-[17px] leading-[1.75] text-muted-foreground">
+          <div className="mt-6 md:mt-24 max-w-xl space-y-3 md:space-y-6 text-[13px] md:text-[17px] leading-[1.6] md:leading-[1.75] text-muted-foreground">
             <p>
               Estamos evoluindo nossa presença digital para refletir com mais
               precisão quem somos, como trabalhamos e o valor que entregamos
@@ -107,14 +105,14 @@ function Index() {
             </p>
           </div>
 
-          <div className="mt-14 md:mt-20">
+          <div className="mt-6 md:mt-20">
             <a
               href="https://wa.me/5511971846376"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-3 bg-card text-foreground border border-border/60 px-8 py-4 text-sm font-medium tracking-wide hover:border-primary hover:text-primary transition-all duration-300"
+              className="group inline-flex items-center justify-center gap-3 bg-card text-foreground border border-border/60 px-6 py-3 md:px-8 md:py-4 text-[13px] md:text-sm font-medium tracking-wide hover:border-primary hover:text-primary transition-all duration-300"
             >
-              <WhatsAppIcon className="w-5 h-5 shrink-0" />
+              <WhatsAppIcon className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
               Falar pelo WhatsApp
             </a>
           </div>
