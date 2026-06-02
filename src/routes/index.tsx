@@ -42,7 +42,7 @@ function Index() {
       {/* Subtle grid backdrop */}
       <div
         aria-hidden
-        className="pointer-events-none fixed inset-0 opacity-[0.006]"
+        className="pointer-events-none fixed inset-0 opacity-[0.003]"
         style={{
           backgroundImage:
             "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
@@ -59,7 +59,7 @@ function Index() {
       <header className="relative z-10 px-6 md:px-12 lg:px-20 pt-10 md:pt-14 pb-4 md:pb-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={iconAsset.url} alt="" className="h-10 md:h-11 w-auto" />
+            <img src={iconAsset.url} alt="" className="h-11 md:h-12 w-auto" />
             <div className="flex flex-col leading-none">
               <span className="font-serif text-xl md:text-2xl tracking-tight">
                 <span className="text-foreground">nero</span>
@@ -95,7 +95,7 @@ function Index() {
             valor.
           </h1>
 
-          <div className="mt-12 md:mt-16 max-w-xl space-y-6 text-[15px] md:text-[17px] leading-[1.75] text-muted-foreground">
+          <div className="mt-16 md:mt-24 max-w-xl space-y-6 text-[15px] md:text-[17px] leading-[1.75] text-muted-foreground">
             <p>
               Estamos evoluindo nossa presença digital para refletir com mais
               precisão quem somos, como trabalhamos e o valor que entregamos
