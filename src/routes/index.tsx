@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import logoAsset from "@/assets/logo-nero.png.asset.json";
 import iconAsset from "@/assets/icone-nero.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -43,7 +42,7 @@ function Index() {
       {/* Subtle grid backdrop */}
       <div
         aria-hidden
-        className="pointer-events-none fixed inset-0 opacity-[0.012]"
+        className="pointer-events-none fixed inset-0 opacity-[0.006]"
         style={{
           backgroundImage:
             "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
@@ -57,7 +56,7 @@ function Index() {
         style={{ background: "var(--primary)" }}
       />
 
-      <header className="relative z-10 px-6 md:px-12 lg:px-20 py-10 md:py-14">
+      <header className="relative z-10 px-6 md:px-12 lg:px-20 pt-10 md:pt-14 pb-4 md:pb-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={iconAsset.url} alt="" className="h-10 md:h-11 w-auto" />
@@ -79,88 +78,46 @@ function Index() {
         </div>
       </header>
 
-      <main className="relative z-10 flex-1 flex items-center px-6 md:px-12 lg:px-20 py-16 md:py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-16 lg:gap-20 items-start">
-          <div className="lg:col-span-8">
-            <div className="flex items-center gap-3 mb-10 md:mb-14">
-              <span className="h-px w-10 bg-primary" />
-              <span className="text-[11px] md:text-xs tracking-[0.28em] uppercase text-primary font-medium">
-                STRATEGY • TRANSFORMATION • EXECUTION
-              </span>
-            </div>
-
-            <h1 className="font-serif text-[2.5rem] leading-[1.05] md:text-6xl lg:text-7xl xl:text-[5.5rem] tracking-tight text-foreground">
-              Evoluindo para
-              <br />
-              entregar <span className="italic text-primary">ainda mais</span>
-              <br />
-              valor.
-            </h1>
-
-            <div className="mt-12 md:mt-16 max-w-xl space-y-6 text-[15px] md:text-[17px] leading-[1.75] text-muted-foreground">
-              <p>
-                Estamos evoluindo nossa presença digital para refletir com mais
-                precisão quem somos, como trabalhamos e o valor que entregamos
-                aos nossos clientes.
-              </p>
-              <p>
-                Enquanto isso, seguimos disponíveis para conversas estratégicas,
-                projetos e oportunidades de colaboração.
-              </p>
-            </div>
-
-            <div className="mt-14 md:mt-20">
-              <a
-                href="https://wa.me/5511971846376"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-3 bg-card text-foreground border border-border/60 px-8 py-4 text-sm font-medium tracking-wide hover:border-primary hover:text-primary transition-all duration-300"
-              >
-                <WhatsAppIcon className="w-5 h-5 shrink-0" />
-                Falar pelo WhatsApp
-              </a>
-            </div>
+      <main className="relative z-10 flex-1 flex items-center px-6 md:px-12 lg:px-20 py-20 md:py-32 lg:py-40">
+        <div className="max-w-3xl mx-auto w-full">
+          <div className="flex items-center gap-3 mb-10 md:mb-14">
+            <span className="h-px w-10 bg-primary" />
+            <span className="text-[11px] md:text-xs tracking-[0.28em] uppercase text-primary font-medium">
+              STRATEGY • TRANSFORMATION • EXECUTION
+            </span>
           </div>
 
-          <aside className="lg:col-span-4 lg:border-l lg:border-border lg:pl-16 pt-4 lg:pt-2">
-            <div className="space-y-12">
-              <div>
-                <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-4">
-                  Áreas de atuação
-                </div>
-                <ul className="space-y-4 text-foreground">
-                  <li className="flex items-baseline gap-3">
-                    <span className="text-primary text-xs">01</span>
-                    <span className="text-sm md:text-base">Estratégia corporativa</span>
-                  </li>
-                  <li className="flex items-baseline gap-3">
-                    <span className="text-primary text-xs">02</span>
-                    <span className="text-sm md:text-base">Transformação organizacional</span>
-                  </li>
-                  <li className="flex items-baseline gap-3">
-                    <span className="text-primary text-xs">03</span>
-                    <span className="text-sm md:text-base">Governança</span>
-                  </li>
-                  <li className="flex items-baseline gap-3">
-                    <span className="text-primary text-xs">04</span>
-                    <span className="text-sm md:text-base">Execução e performance</span>
-                  </li>
-                </ul>
-              </div>
+          <h1 className="font-serif text-[2.5rem] leading-[1.05] md:text-6xl lg:text-7xl xl:text-[5.5rem] tracking-tight text-foreground">
+            Evoluindo para
+            <br />
+            entregar <span className="italic text-primary">ainda mais</span>
+            <br />
+            valor.
+          </h1>
 
-              <div className="pt-10 border-t border-border">
-                <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-4">
-                  Contato direto
-                </div>
-                <a
-                  href="https://wa.me/5511971846376"
-                  className="block text-foreground hover:text-primary transition-colors text-base"
-                >
-                  +55 11 97184-6376
-                </a>
-              </div>
-            </div>
-          </aside>
+          <div className="mt-12 md:mt-16 max-w-xl space-y-6 text-[15px] md:text-[17px] leading-[1.75] text-muted-foreground">
+            <p>
+              Estamos evoluindo nossa presença digital para refletir com mais
+              precisão quem somos, como trabalhamos e o valor que entregamos
+              aos nossos clientes.
+            </p>
+            <p>
+              Enquanto isso, seguimos disponíveis para conversas estratégicas,
+              projetos e oportunidades de colaboração.
+            </p>
+          </div>
+
+          <div className="mt-14 md:mt-20">
+            <a
+              href="https://wa.me/5511971846376"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-3 bg-card text-foreground border border-border/60 px-8 py-4 text-sm font-medium tracking-wide hover:border-primary hover:text-primary transition-all duration-300"
+            >
+              <WhatsAppIcon className="w-5 h-5 shrink-0" />
+              Falar pelo WhatsApp
+            </a>
+          </div>
         </div>
       </main>
 
@@ -170,7 +127,7 @@ function Index() {
             © {new Date().getFullYear()} Nero Consulting. Delivering Value.
           </div>
           <div className="tracking-[0.2em] uppercase text-[10px]">
-            Nova experiência digital · em breve
+            Nero Consulting — Strategy • Transformation • Execution
           </div>
         </div>
       </footer>
