@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Nero Consulting" },
+      { name: "description", content: "Consultoria especializada em estratégia, transformação e execução. Nova experiência digital em desenvolvimento." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Nero Consulting" },
+      { property: "og:description", content: "Consultoria especializada em estratégia, transformação e execução. Nova experiência digital em desenvolvimento." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Nero Consulting" },
+      { name: "twitter:description", content: "Consultoria especializada em estratégia, transformação e execução. Nova experiência digital em desenvolvimento." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Iq0YTamYU4O8sIuVbZ8Mg8sEt9D2/social-images/social-1780407103442-icone.nero..webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Iq0YTamYU4O8sIuVbZ8Mg8sEt9D2/social-images/social-1780407103442-icone.nero..webp" },
     ],
     links: [
       {
