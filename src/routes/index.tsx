@@ -91,7 +91,7 @@ function Index() {
           <div className="mt-6 md:mt-24 max-w-xl space-y-3 md:space-y-6 text-[13px] md:text-[17px] leading-[1.6] md:leading-[1.75] text-muted-foreground">
             <p>
               Estamos evoluindo nossa presença digital para refletir com mais precisão quem somos, como trabalhamos e o
-              valor que entregamos aos nossos clientes..
+              valor que entregamos aos nossos clientes.
             </p>
             <p>
               Enquanto isso, seguimos disponíveis para conversas estratégicas, projetos e oportunidades de colaboração.
