@@ -46,11 +46,19 @@ function Index() {
 
       <header className="relative z-10 px-6 md:px-12 lg:px-20 py-8 md:py-10">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <img
-            src={logoAsset.url}
-            alt="Nero Consulting"
-            className="h-9 md:h-11 w-auto"
-          />
+          <div className="flex items-center gap-3">
+            <img src={iconAsset.url} alt="" className="h-10 md:h-11 w-auto" />
+            <div className="flex flex-col leading-none">
+              <span className="font-serif text-xl md:text-2xl tracking-tight">
+                <span className="text-foreground">nero</span>
+                <span className="text-primary">consulting</span>
+              </span>
+              <span className="mt-1.5 text-[9px] md:text-[10px] tracking-[0.32em] uppercase text-muted-foreground">
+                Delivering Value
+              </span>
+            </div>
+          </div>
+
           <div className="hidden md:flex items-center gap-3 text-xs tracking-[0.2em] uppercase text-muted-foreground">
             <span className="h-px w-8 bg-border" />
             <span>São Paulo · Brasil</span>
