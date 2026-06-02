@@ -24,13 +24,26 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+function WhatsAppIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.868-2.031-.967-.269-.099-.467-.149-.662.149-.197.297-.766.967-.938 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.389-1.476-.883-.789-1.48-1.762-1.653-2.059-.173-.298-.018-.458.13-.607.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.662-1.594-.907-2.182-.237-.569-.478-.49-.662-.499-.173-.008-.371-.01-.57-.01-.198 0-.521.075-.795.372-.272.298-1.04 1.017-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.486.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.759-.721 2.007-1.413.249-.693.249-1.284.174-1.414-.075-.129-.272-.198-.57-.347m-5.421 7.403h-.004a9.868 9.868 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.864 9.864 0 01-1.51-5.26 9.864 9.864 0 0110.15-9.56c2.62.005 5.08 1.027 6.926 2.88a9.84 9.84 0 012.874 6.924c-.005 5.43-4.418 9.835-9.838 9.84m8.406-18.24A11.838 11.838 0 0012.1 0C5.448.005.005 5.446 0 12.1c.005 2.13.562 4.21 1.616 6.04l-1.716 6.27 6.4-1.68a11.9 11.9 0 005.68 1.45h.005c6.555 0 11.9-5.34 11.905-11.898a11.8 11.8 0 00-3.484-8.406z" />
+    </svg>
+  );
+}
+
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       {/* Subtle grid backdrop */}
       <div
         aria-hidden
-        className="pointer-events-none fixed inset-0 opacity-[0.04]"
+        className="pointer-events-none fixed inset-0 opacity-[0.012]"
         style={{
           backgroundImage:
             "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
@@ -44,7 +57,7 @@ function Index() {
         style={{ background: "var(--primary)" }}
       />
 
-      <header className="relative z-10 px-6 md:px-12 lg:px-20 py-8 md:py-10">
+      <header className="relative z-10 px-6 md:px-12 lg:px-20 py-10 md:py-14">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={iconAsset.url} alt="" className="h-10 md:h-11 w-auto" />
@@ -66,13 +79,13 @@ function Index() {
         </div>
       </header>
 
-      <main className="relative z-10 flex-1 flex items-center px-6 md:px-12 lg:px-20 py-12 md:py-20">
-        <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <main className="relative z-10 flex-1 flex items-center px-6 md:px-12 lg:px-20 py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-16 lg:gap-20 items-start">
           <div className="lg:col-span-8">
-            <div className="flex items-center gap-3 mb-8 md:mb-10">
+            <div className="flex items-center gap-3 mb-10 md:mb-14">
               <span className="h-px w-10 bg-primary" />
               <span className="text-[11px] md:text-xs tracking-[0.28em] uppercase text-primary font-medium">
-                Strategy · Transformation · Execution
+                STRATEGY • TRANSFORMATION • EXECUTION
               </span>
             </div>
 
@@ -84,10 +97,11 @@ function Index() {
               valor.
             </h1>
 
-            <div className="mt-10 md:mt-12 max-w-2xl space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
+            <div className="mt-12 md:mt-16 max-w-xl space-y-6 text-[15px] md:text-[17px] leading-[1.75] text-muted-foreground">
               <p>
-                Estamos preparando uma nova experiência digital para refletir a
-                evolução da Nero Consulting.
+                Estamos evoluindo nossa presença digital para refletir com mais
+                precisão quem somos, como trabalhamos e o valor que entregamos
+                aos nossos clientes.
               </p>
               <p>
                 Enquanto isso, seguimos disponíveis para conversas estratégicas,
@@ -95,39 +109,26 @@ function Index() {
               </p>
             </div>
 
-            <div className="mt-12 md:mt-14 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="mt-14 md:mt-20">
               <a
                 href="https://wa.me/5511971846376"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-7 py-4 text-sm font-medium tracking-wide hover:bg-primary/90 transition-all"
+                className="group inline-flex items-center justify-center gap-3 bg-card text-foreground border border-border/60 px-8 py-4 text-sm font-medium tracking-wide hover:border-primary hover:text-primary transition-all duration-300"
               >
+                <WhatsAppIcon className="w-5 h-5 shrink-0" />
                 Falar pelo WhatsApp
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M13 5l7 7-7 7" />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/neroconsulting/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 border border-border text-foreground px-7 py-4 text-sm font-medium tracking-wide hover:border-primary hover:text-primary transition-all"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V10.5H5.67v7.84h2.67zM7 9.32a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.02v-4.3c0-2.48-1.33-3.63-3.1-3.63-1.43 0-2.07.79-2.43 1.34V10.5h-2.67c.04.75 0 7.84 0 7.84h2.67v-4.38c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.81v4.19h2.73z" />
-                </svg>
-                LinkedIn
               </a>
             </div>
           </div>
 
-          <aside className="lg:col-span-4 lg:border-l lg:border-border lg:pl-12">
-            <div className="space-y-10">
+          <aside className="lg:col-span-4 lg:border-l lg:border-border lg:pl-16 pt-4 lg:pt-2">
+            <div className="space-y-12">
               <div>
-                <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-3">
+                <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-4">
                   Áreas de atuação
                 </div>
-                <ul className="space-y-3 text-foreground">
+                <ul className="space-y-4 text-foreground">
                   <li className="flex items-baseline gap-3">
                     <span className="text-primary text-xs">01</span>
                     <span className="text-sm md:text-base">Estratégia corporativa</span>
@@ -147,8 +148,8 @@ function Index() {
                 </ul>
               </div>
 
-              <div className="pt-8 border-t border-border">
-                <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-3">
+              <div className="pt-10 border-t border-border">
+                <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-4">
                   Contato direto
                 </div>
                 <a
@@ -163,7 +164,7 @@ function Index() {
         </div>
       </main>
 
-      <footer className="relative z-10 px-6 md:px-12 lg:px-20 py-8 border-t border-border">
+      <footer className="relative z-10 px-6 md:px-12 lg:px-20 py-10 border-t border-border">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-muted-foreground">
           <div className="tracking-wide">
             © {new Date().getFullYear()} Nero Consulting. Delivering Value.
